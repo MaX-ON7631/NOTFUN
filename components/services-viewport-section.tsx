@@ -131,15 +131,17 @@ const WebsiteUIGraphic = () => (
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between px-1 opacity-50">
-        <div className="w-3 h-12 sm:h-24 bg-gradient-to-t from-blue-500 to-cyan-400 rounded-t-sm" />
-        <div className="w-2 h-16 sm:h-32 bg-gradient-to-t from-blue-400 to-cyan-300 rounded-t-sm" />
-        <div className="w-4 h-14 sm:h-28 bg-gradient-to-t from-blue-500 to-cyan-400 rounded-t-sm" />
-        <div className="w-2 h-10 sm:h-20 bg-gradient-to-t from-blue-400 to-cyan-300 rounded-t-sm" />
+      <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between px-1 opacity-80">
+        <div className="w-3 h-12 sm:h-24 bg-gradient-to-t from-blue-600 to-cyan-400 rounded-t-sm shadow-lg shadow-blue-500/20" />
+        <div className="w-2 h-16 sm:h-32 bg-gradient-to-t from-blue-500 to-cyan-300 rounded-t-sm shadow-lg shadow-blue-400/20" />
+        <div className="w-4 h-14 sm:h-28 bg-gradient-to-t from-blue-600 to-cyan-400 rounded-t-sm shadow-lg shadow-blue-500/20" />
+        <div className="w-2 h-10 sm:h-20 bg-gradient-to-t from-blue-500 to-cyan-300 rounded-t-sm shadow-lg shadow-blue-400/20" />
+        <div className="w-3 h-18 sm:h-36 bg-gradient-to-t from-cyan-600 to-blue-400 rounded-t-sm shadow-lg shadow-cyan-500/20" />
+        <div className="w-2 h-8 sm:h-16 bg-gradient-to-t from-blue-400 to-cyan-300 rounded-t-sm shadow-lg shadow-blue-300/20" />
 
         {/* First tall building with antenna and 12 windows */}
         <div className="relative">
-          <div className="w-5 h-20 sm:h-40 bg-gradient-to-t from-blue-500 to-cyan-400 rounded-t-sm" />
+          <div className="w-5 h-20 sm:h-40 bg-gradient-to-t from-blue-500 to-cyan-300 rounded-t-sm shadow-xl shadow-cyan-400/50 border border-cyan-400/30" />
           <div className="absolute -top-3 sm:-top-6 left-1/2 transform -translate-x-1/2 w-0.5 h-3 sm:h-6 bg-cyan-300" />
           <div className="absolute bottom-4 left-1 w-1 h-1 bg-white rounded-full shadow-sm shadow-white" />
           <div className="absolute bottom-8 left-1 w-1 h-1 bg-white rounded-full shadow-sm shadow-white" />
@@ -163,8 +165,9 @@ const WebsiteUIGraphic = () => (
 
         {/* Second tallest building with antenna and 12 windows */}
         <div className="relative">
-          <div className="w-6 h-24 sm:h-48 bg-gradient-to-t from-blue-500 to-cyan-400 rounded-t-sm" />
+          <div className="w-6 h-24 sm:h-48 bg-gradient-to-t from-blue-500 to-cyan-300 rounded-t-sm shadow-xl shadow-cyan-400/50 border border-cyan-400/30" />
           <div className="absolute -top-4 sm:-top-8 left-1/2 transform -translate-x-1/2 w-0.5 h-4 sm:h-8 bg-cyan-300" />
+
           <div className="absolute bottom-4 left-1 w-1 h-1 bg-white rounded-full shadow-sm shadow-white" />
           <div className="absolute bottom-8 left-1 w-1 h-1 bg-white rounded-full shadow-sm shadow-white" />
           <div className="absolute bottom-12 left-1 w-1 h-1 bg-white rounded-full shadow-sm shadow-white" />
@@ -195,27 +198,31 @@ const WebsiteUIGraphic = () => (
         <div className="w-4 h-18 sm:h-36 bg-gradient-to-t from-blue-500 to-cyan-400 rounded-t-sm" />
         <div className="w-3 h-20 sm:h-40 bg-gradient-to-t from-blue-400 to-cyan-300 rounded-t-sm" />
 
-        {/* Third tallest building with antenna and 12 windows */}
-        <div className="relative">
-          <div className="w-5 h-25 sm:h-50 bg-gradient-to-t from-blue-500 to-cyan-400 rounded-t-sm" />
 
+
+        <div className="w-2 h-14 sm:h-28 bg-gradient-to-t from-blue-500 to-cyan-300 rounded-t-sm shadow-lg shadow-blue-400/20" />
+        <div className="w-4 h-22 sm:h-44 bg-gradient-to-t from-blue-600 to-cyan-400 rounded-t-sm shadow-lg shadow-blue-500/25" />
+        <div className="w-3 h-19 sm:h-38 bg-gradient-to-t from-blue-500 to-cyan-300 rounded-t-sm shadow-lg shadow-blue-400/20" />
+        <div className="w-2 h-12 sm:h-24 bg-gradient-to-t from-cyan-500 to-blue-300 rounded-t-sm shadow-lg shadow-cyan-400/20" />
+        {/* Tall skyscraper with antenna - Right side */}
+        <div className="relative">
+          <div className="w-5 h-26 sm:h-52 bg-gradient-to-t from-blue-500 to-cyan-300 rounded-t-sm shadow-xl shadow-cyan-400/60 border border-cyan-300/40" />
+          <div className="absolute -top-2 sm:-top-4 left-1/2 transform -translate-x-1/2 w-0.5 h-2 sm:h-4 bg-cyan-300" />
+          {/* Windows */}
           <div className="absolute bottom-4 left-1 w-1 h-1 bg-white rounded-full shadow-sm shadow-white" />
           <div className="absolute bottom-8 left-1 w-1 h-1 bg-white rounded-full shadow-sm shadow-white" />
           <div className="absolute bottom-12 left-1 w-1 h-1 bg-white rounded-full shadow-sm shadow-white" />
-          <div className="absolute bottom-16 left-1 w-1 h-1 bg-white rounded-full shadow-sm shadow-white" />
-          <div className="absolute bottom-20 left-1 w-1 h-1 bg-white rounded-full shadow-sm shadow-white" />
-          <div className="absolute bottom-24 left-1 w-1 h-1 bg-white rounded-full shadow-sm shadow-white" />
+          <div className="absolute bottom-16 left-1 w-1 h-1 bg-white rounded-full shadow-sm shadow-white hidden sm:block" />
+          <div className="absolute bottom-20 left-1 w-1 h-1 bg-white rounded-full shadow-sm shadow-white hidden sm:block" />
           <div className="absolute bottom-4 right-1 w-1 h-1 bg-white rounded-full shadow-sm shadow-white" />
           <div className="absolute bottom-8 right-1 w-1 h-1 bg-white rounded-full shadow-sm shadow-white" />
           <div className="absolute bottom-12 right-1 w-1 h-1 bg-white rounded-full shadow-sm shadow-white" />
-          <div className="absolute bottom-16 right-1 w-1 h-1 bg-white rounded-full shadow-sm shadow-white" />
-          <div className="absolute bottom-20 right-1 w-1 h-1 bg-white rounded-full shadow-sm shadow-white" />
-          <div className="absolute bottom-24 right-1 w-1 h-1 bg-white rounded-full shadow-sm shadow-white" />
+          <div className="absolute bottom-16 right-1 w-1 h-1 bg-white rounded-full shadow-sm shadow-white hidden sm:block" />
+          <div className="absolute bottom-20 right-1 w-1 h-1 bg-white rounded-full shadow-sm shadow-white hidden sm:block" />
         </div>
-
-        <div className="w-2 h-14 sm:h-28 bg-gradient-to-t from-blue-400 to-cyan-300 rounded-t-sm" />
-        <div className="w-4 h-22 sm:h-44 bg-gradient-to-t from-blue-500 to-cyan-400 rounded-t-sm" />
-        <div className="w-3 h-19 sm:h-38 bg-gradient-to-t from-blue-400 to-cyan-300 rounded-t-sm" />
+        <div className="w-3 h-16 sm:h-32 bg-gradient-to-t from-blue-500 to-cyan-400 rounded-t-sm shadow-lg shadow-blue-400/20" />
+        <div className="w-2 h-9 sm:h-18 bg-gradient-to-t from-cyan-400 to-blue-300 rounded-t-sm shadow-lg shadow-cyan-300/20" />
+        <div className="w-4 h-20 sm:h-40 bg-gradient-to-t from-blue-600 to-cyan-400 rounded-t-sm shadow-lg shadow-blue-500/25" />
       </div>
     </div>
   </div>
@@ -255,9 +262,9 @@ const MobileUIGraphic = () => (
         </div>
       </motion.div>
 
-      {/* Multiple Platforms - Top Left */}
+      {/* Multiple Platforms - Right Side */}
       <motion.div
-        className="absolute top-2 left-2 sm:top-4 sm:left-4 bg-gradient-to-r from-purple-500/20 to-pink-400/20 rounded-lg p-2 sm:p-3 border border-purple-400/40 backdrop-blur-sm shadow-lg"
+        className="absolute right-1 top-[15%] sm:right-2 bg-gradient-to-r from-purple-500/20 to-pink-400/20 rounded-lg p-2 sm:p-2.5 xl:p-3 xl:p-3 border border-purple-400/40 backdrop-blur-sm shadow-lg w-[230px] xl:w-[280px] h-[60px] xl:h-[70px]"
         initial={{ opacity: 0, y: -20, x: -20 }}
         whileInView={{ opacity: 1, y: 0, x: 0 }}
         transition={{ delay: 0.1, duration: 0.8 }}
@@ -282,8 +289,8 @@ const MobileUIGraphic = () => (
             </svg>
           </div>
           <div className="hidden sm:block">
-            <div className="text-xs font-bold text-purple-400 mb-1">MULTIPLE PLATFORMS</div>
-            <div className="text-xs text-gray-300">iOS, Android, PC, Switch</div>
+            <div className="text-xs xl:text-sm font-bold text-purple-400 mb-1">MULTIPLE PLATFORMS</div>
+            <div className="text-xs xl:text-sm text-gray-300">iOS, Android, PC, Switch</div>
           </div>
           <div className="block sm:hidden">
             <div className="text-xs font-bold text-purple-400">PLATFORMS</div>
@@ -291,9 +298,9 @@ const MobileUIGraphic = () => (
         </div>
       </motion.div>
 
-      {/* VR Experience - Top Center */}
+      {/* VR Experience - Right Side */}
       <motion.div
-        className="absolute top-2 left-1/2 transform -translate-x-1/2 sm:top-4 bg-gradient-to-r from-blue-500/20 to-purple-400/20 rounded-lg p-2 sm:p-3 border border-blue-400/40 backdrop-blur-sm shadow-lg max-w-[200px] sm:max-w-none"
+        className="absolute right-1 top-[35%] sm:right-2 bg-gradient-to-r from-blue-500/20 to-purple-400/20 rounded-lg p-2 sm:p-2.5 xl:p-3 xl:p-3 border border-blue-400/40 backdrop-blur-sm shadow-lg w-[230px] xl:w-[280px] h-[60px] xl:h-[70px]"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.15, duration: 0.8 }}
@@ -318,16 +325,16 @@ const MobileUIGraphic = () => (
             </svg>
           </div>
           <div>
-            <div className="text-xs font-bold text-blue-400 mb-1 hidden sm:block">VR GAMING COMPANY</div>
+            <div className="text-xs xl:text-sm font-bold text-blue-400 mb-1 hidden sm:block">VR GAMING COMPANY</div>
             <div className="text-xs font-bold text-blue-400 mb-1 block sm:hidden">VR GAMING</div>
-            <div className="text-xs text-gray-300">5+ Years Experience</div>
+            <div className="text-xs xl:text-sm text-gray-300">5+ Years Experience</div>
           </div>
         </div>
       </motion.div>
 
-      {/* Downloads - Top Right */}
+      {/* Downloads - Right Side */}
       <motion.div
-        className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-gradient-to-r from-cyan-500/20 to-blue-400/20 rounded-lg p-2 sm:p-3 border border-cyan-400/40 backdrop-blur-sm shadow-lg"
+        className="absolute right-1 top-[55%] sm:right-2 bg-gradient-to-r from-cyan-500/20 to-blue-400/20 rounded-lg p-2 sm:p-2.5 xl:p-3 border border-cyan-400/40 backdrop-blur-sm shadow-lg w-[230px] xl:w-[280px] h-[60px] xl:h-[70px]"
         initial={{ opacity: 0, y: -20, x: 20 }}
         whileInView={{ opacity: 1, y: 0, x: 0 }}
         transition={{ delay: 0.2, duration: 0.8 }}
@@ -352,15 +359,15 @@ const MobileUIGraphic = () => (
             </svg>
           </div>
           <div>
-            <div className="text-sm font-bold text-cyan-400">1.5B+</div>
-            <div className="text-xs text-gray-300 hidden sm:block">Downloads</div>
+            <div className="text-sm xl:text-base font-bold text-cyan-400">1.5B+</div>
+            <div className="text-xs xl:text-sm text-gray-300 hidden sm:block">Downloads</div>
           </div>
         </div>
       </motion.div>
 
-      {/* #1 hits - Bottom Center */}
+      {/* #1 hits - Right Side */}
       <motion.div
-        className="absolute bottom-2 left-1/2 transform -translate-x-1/2 sm:bottom-4 bg-gradient-to-r from-yellow-500/20 to-orange-400/20 rounded-lg p-2 sm:p-3 border border-yellow-400/40 backdrop-blur-sm shadow-lg"
+        className="absolute right-1 top-[75%] sm:right-2 bg-gradient-to-r from-yellow-500/20 to-orange-400/20 rounded-lg p-2 sm:p-2.5 xl:p-3 border border-yellow-400/40 backdrop-blur-sm shadow-lg w-[230px] xl:w-[280px] h-[60px] xl:h-[70px]"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.8 }}
@@ -385,15 +392,15 @@ const MobileUIGraphic = () => (
             </svg>
           </div>
           <div>
-            <div className="text-sm font-bold text-yellow-400">25+</div>
-            <div className="text-xs text-gray-300 hidden sm:block">#1 hits in app stores</div>
+            <div className="text-sm xl:text-base font-bold text-yellow-400">25+</div>
+            <div className="text-xs xl:text-sm text-gray-300 hidden sm:block">#1 hits in app stores</div>
           </div>
         </div>
       </motion.div>
 
       {/* I Am Cat - Left Side (Leader) */}
       <motion.div
-        className="absolute left-1 top-1/4 sm:left-2 bg-gradient-to-r from-green-500/20 to-emerald-400/20 rounded-lg p-2 sm:p-3 border border-green-400/40 backdrop-blur-sm shadow-lg"
+        className="absolute left-1 top-[15%] sm:left-2 bg-gradient-to-r from-green-500/20 to-emerald-400/20 rounded-lg p-2 sm:p-2.5 xl:p-3 border border-green-400/40 backdrop-blur-sm shadow-lg w-[230px] xl:w-[280px] h-[60px] xl:h-[70px]"
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.3, duration: 0.8 }}
@@ -421,17 +428,17 @@ const MobileUIGraphic = () => (
             />
           </div>
           <div className="hidden sm:block">
-            <div className="text-xs font-bold text-green-400 mb-1 flex items-center space-x-1">
+            <div className="text-xs xl:text-sm font-bold text-green-400 mb-1 flex items-center space-x-1">
               <span>I AM CAT</span>
             </div>
-            <div className="text-xs text-gray-300">4.9★ (63K users)</div>
+            <div className="text-xs xl:text-sm text-gray-300">4.9<span className="text-yellow-400">★</span> (63K users)</div>
           </div>
         </div>
       </motion.div>
 
-      {/* I Am Security - Right Side (Leader) */}
+      {/* I Am Security - Left Side */}
       <motion.div
-        className="absolute right-1 top-1/3 sm:right-2 bg-gradient-to-r from-red-500/20 to-orange-400/20 rounded-lg p-2 sm:p-3 border border-red-400/40 backdrop-blur-sm shadow-lg"
+        className="absolute left-1 top-[35%] sm:left-2 bg-gradient-to-r from-red-500/20 to-orange-400/20 rounded-lg p-2 sm:p-2.5 xl:p-3 border border-red-400/40 backdrop-blur-sm shadow-lg w-[230px] xl:w-[280px] h-[60px] xl:h-[70px]"
         initial={{ opacity: 0, x: 20 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.4, duration: 0.8 }}
@@ -459,17 +466,17 @@ const MobileUIGraphic = () => (
             />
           </div>
           <div className="hidden sm:block">
-            <div className="text-xs font-bold text-red-400 mb-1 flex items-center space-x-1">
+            <div className="text-xs xl:text-sm font-bold text-red-400 mb-1 flex items-center space-x-1">
               <span>I AM SECURITY</span>
             </div>
-            <div className="text-xs text-gray-300">4.8★ (42K users)</div>
+            <div className="text-xs xl:text-sm text-gray-300">4.8<span className="text-yellow-400">★</span> (42K users)</div>
           </div>
         </div>
       </motion.div>
 
-      {/* Titans Clinic - Bottom Right */}
+      {/* Titans Clinic - Left Side */}
       <motion.div
-        className="absolute right-2 bottom-16 sm:right-4 sm:bottom-32 bg-gradient-to-r from-indigo-500/15 to-purple-400/15 rounded-lg p-2 sm:p-2.5 border border-indigo-400/30 backdrop-blur-sm shadow-md"
+        className="absolute left-1 top-[55%] sm:left-2 bg-gradient-to-r from-indigo-500/15 to-purple-400/15 rounded-lg p-2 sm:p-2.5 xl:p-3 border border-indigo-400/30 backdrop-blur-sm shadow-lg w-[230px] xl:w-[280px] h-[60px] xl:h-[70px]"
         initial={{ opacity: 0, x: 15, y: 10 }}
         whileInView={{ opacity: 1, x: 0, y: 0 }}
         transition={{ delay: 0.5, duration: 0.8 }}
@@ -496,17 +503,17 @@ const MobileUIGraphic = () => (
             />
           </div>
           <div className="hidden sm:block">
-            <div className="text-xs font-semibold text-indigo-400 mb-1">
+            <div className="text-xs xl:text-sm font-semibold text-indigo-400 mb-1">
               <span>TITANS CLINIC</span>
             </div>
-            <div className="text-xs text-gray-400">4.8★ (15K users)</div>
+            <div className="text-xs xl:text-sm text-gray-400">4.8<span className="text-yellow-400">★</span> (15K users)</div>
           </div>
         </div>
       </motion.div>
 
-      {/* Fruit Salon - Bottom Left */}
+      {/* Fruit Salon - Left Side */}
       <motion.div
-        className="absolute left-2 bottom-12 sm:left-4 sm:bottom-20 bg-gradient-to-r from-teal-500/15 to-cyan-400/15 rounded-lg p-2 sm:p-2.5 border border-teal-400/30 backdrop-blur-sm shadow-md"
+        className="absolute left-1 top-[75%] sm:left-2 bg-gradient-to-r from-teal-500/15 to-cyan-400/15 rounded-lg p-2 sm:p-2.5 xl:p-3 border border-teal-400/30 backdrop-blur-sm shadow-lg w-[230px] xl:w-[280px] h-[60px] xl:h-[70px]"
         initial={{ opacity: 0, x: -15, y: 10 }}
         whileInView={{ opacity: 1, x: 0, y: 0 }}
         transition={{ delay: 0.6, duration: 0.8 }}
@@ -533,36 +540,81 @@ const MobileUIGraphic = () => (
             />
           </div>
           <div className="hidden sm:block">
-            <div className="text-xs font-semibold text-teal-400 mb-1">
+            <div className="text-xs xl:text-sm font-semibold text-teal-400 mb-1">
               <span>FRUIT SALON</span>
             </div>
-            <div className="text-xs text-gray-400">4.8★ (3K users)</div>
+            <div className="text-xs xl:text-sm text-gray-400">4.8<span className="text-yellow-400">★</span> (3K users)</div>
           </div>
         </div>
       </motion.div>
 
-      {/* Floating holographic particles */}
-      {Array.from({ length: 8 }).map((_, i) => (
+      {/* Chaotic floating particles */}
+      {Array.from({ length: 12 }).map((_, i) => (
         <motion.div
-          key={i}
+          key={`particle-${i}`}
           className="absolute w-1 h-1 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full opacity-60"
           style={{
-            left: `${20 + i * 10}%`,
-            top: `${30 + (i % 3) * 20}%`,
+            left: `${Math.random() * 85 + 5}%`,
+            top: `${Math.random() * 85 + 5}%`,
           }}
           animate={{
             y: [0, -10, 0],
-            opacity: [0.3, 0.6, 0.3],
-            scale: [0.5, 0.8, 0.5],
+            opacity: [0.3, 0.8, 0.3],
+            scale: [0.5, 1.2, 0.5],
           }}
           transition={{
-            duration: 6 + i * 0.5,
+            duration: 3 + Math.random() * 4,
             repeat: Number.POSITIVE_INFINITY,
-            delay: i * 0.5,
+            delay: Math.random() * 3,
             ease: "easeInOut",
           }}
         />
       ))}
+
+      {Array.from({ length: 8 }).map((_, i) => (
+        <motion.div
+          key={`particle-cyan-${i}`}
+          className="absolute w-1 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full opacity-60"
+          style={{
+            left: `${Math.random() * 85 + 5}%`,
+            top: `${Math.random() * 85 + 5}%`,
+          }}
+          animate={{
+            y: [0, -8, 0],
+            opacity: [0.2, 0.7, 0.2],
+            scale: [0.3, 1, 0.3],
+          }}
+          transition={{
+            duration: 4 + Math.random() * 3,
+            repeat: Number.POSITIVE_INFINITY,
+            delay: Math.random() * 2,
+            ease: "easeInOut",
+          }}
+        />
+      ))}
+
+      {Array.from({ length: 6 }).map((_, i) => (
+        <motion.div
+          key={`particle-green-${i}`}
+          className="absolute w-1 h-1 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full opacity-60"
+          style={{
+            left: `${Math.random() * 85 + 5}%`,
+            top: `${Math.random() * 85 + 5}%`,
+          }}
+          animate={{
+            y: [0, -12, 0],
+            opacity: [0.4, 0.9, 0.4],
+            scale: [0.6, 0.9, 0.6],
+          }}
+          transition={{
+            duration: 5 + Math.random() * 2,
+            repeat: Number.POSITIVE_INFINITY,
+            delay: Math.random() * 4,
+            ease: "easeInOut",
+          }}
+        />
+      ))}
+
     </div>
   </div>
 )
@@ -906,7 +958,7 @@ export function ServicesViewportSection() {
                 viewport={{ once: true, amount: 0.3 }}
                 className="min-h-[60vh] flex items-center"
               >
-                <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 2xl:gap-20 items-start">
+                <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 2xl:gap-20 items-start" id={index === 0 ? "about-us-content" : index === 1 ? "portfolio" : ""}>
                   <motion.div
                     className={`space-y-6 lg:space-y-8 ${index % 2 === 1 ? "lg:order-2" : ""}`}
                     initial={{ opacity: 0, x: index % 2 === 1 ? 50 : -50 }}
