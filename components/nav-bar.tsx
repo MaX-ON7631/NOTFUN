@@ -25,9 +25,10 @@ export function NavBar() {
   }, [])
 
   const navItems = [
+    { name: "About Us", href: "#about-us-content", icon: <Handshake className="w-4 h-4" /> },
+    { name: "Portfolio", href: "#portfolio" },
     { name: "Games", href: "#games" },
     { name: "Contacts", href: "#contact" },
-    { name: "About Us", href: "#about-us", icon: <Handshake className="w-4 h-4" /> },
   ]
 
   const scrollToSection = (href: string, e?: React.MouseEvent) => {
