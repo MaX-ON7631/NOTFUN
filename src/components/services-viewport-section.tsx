@@ -1,8 +1,5 @@
-"use client"
-
-import React, { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef } from "react"
 import { motion } from "framer-motion"
-
 import {
   Globe,
   Smartphone,
@@ -224,99 +221,103 @@ const WebsiteUIGraphic = () => (
       </motion.div>
     </div>
 
-    {/* Floating Investment Cards */}
-    <motion.div
-      className="absolute right-2 top-[20%] bg-gradient-to-r from-blue-500/20 to-cyan-400/20 rounded-lg p-2 border border-blue-400/40 backdrop-blur-sm shadow-lg w-[200px] h-[50px]"
-      initial={{ opacity: 0, x: 20 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
-      animate={{
-        y: [0, -2, 0],
-        rotateY: [0, 2, 0],
-      }}
-      transition={{
-        delay: 0.7,
-        duration: 0.8,
-        y: { duration: 8, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
-        rotateY: { duration: 10, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
-      }}
-      style={{
-        boxShadow: "0 8px 32px rgba(59, 130, 246, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1)",
-        transform: "perspective(1000px)",
-      }}
-    >
-      <div className="flex items-center space-x-2">
-        <div className="w-5 h-5 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-lg flex items-center justify-center">
-          <DollarSign className="w-3 h-3 text-white" />
-        </div>
-        <div>
-          <div className="text-xs font-bold text-blue-400">Dividend Flow</div>
-          <div className="text-xs text-gray-300">Active Management</div>
-        </div>
-      </div>
-    </motion.div>
+    {/* Floating Investment Cards - Horizontal Layout */}
+    <div className="absolute bottom-4 left-4 right-4">
+      <div className="flex space-x-3">
+        <motion.div
+          className="bg-gradient-to-r from-blue-500/20 to-cyan-400/20 rounded-lg p-3 border border-blue-400/40 backdrop-blur-sm shadow-lg flex-1"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          animate={{
+            y: [0, -2, 0],
+            rotateY: [0, 2, 0],
+          }}
+          transition={{
+            delay: 0.7,
+            duration: 0.8,
+            y: { duration: 8, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
+            rotateY: { duration: 10, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
+          }}
+          style={{
+            boxShadow: "0 8px 32px rgba(59, 130, 246, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1)",
+            transform: "perspective(1000px)",
+          }}
+        >
+          <div className="flex items-center space-x-3">
+            <div className="w-6 h-6 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-lg flex items-center justify-center">
+              <DollarSign className="w-4 h-4 text-white" />
+            </div>
+            <div>
+              <div className="text-sm font-bold text-blue-400">Dividend Flow</div>
+              <div className="text-xs text-gray-300">Active Management</div>
+            </div>
+          </div>
+        </motion.div>
 
-    <motion.div
-      className="absolute right-2 top-[40%] bg-gradient-to-r from-purple-500/20 to-pink-400/20 rounded-lg p-2 border border-purple-400/40 backdrop-blur-sm shadow-lg w-[200px] h-[50px]"
-      initial={{ opacity: 0, x: 20 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
-      animate={{
-        y: [0, -2, 0],
-        rotateY: [0, -2, 0],
-      }}
-      transition={{
-        delay: 0.8,
-        duration: 0.8,
-        y: { duration: 9, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
-        rotateY: { duration: 11, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
-      }}
-      style={{
-        boxShadow: "0 8px 32px rgba(168, 85, 247, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1)",
-        transform: "perspective(1000px)",
-      }}
-    >
-      <div className="flex items-center space-x-2">
-        <div className="w-5 h-5 bg-gradient-to-br from-purple-400 to-pink-500 rounded-lg flex items-center justify-center">
-          <Rocket className="w-3 h-3 text-white" />
-        </div>
-        <div>
-          <div className="text-xs font-bold text-purple-400">Innovation Hub</div>
-          <div className="text-xs text-gray-300">Tech Ventures</div>
-        </div>
-      </div>
-    </motion.div>
+        <motion.div
+          className="bg-gradient-to-r from-purple-500/20 to-pink-400/20 rounded-lg p-3 border border-purple-400/40 backdrop-blur-sm shadow-lg flex-1"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          animate={{
+            y: [0, -2, 0],
+            rotateY: [0, -2, 0],
+          }}
+          transition={{
+            delay: 0.8,
+            duration: 0.8,
+            y: { duration: 9, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
+            rotateY: { duration: 11, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
+          }}
+          style={{
+            boxShadow: "0 8px 32px rgba(168, 85, 247, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1)",
+            transform: "perspective(1000px)",
+          }}
+        >
+          <div className="flex items-center space-x-3">
+            <div className="w-6 h-6 bg-gradient-to-br from-purple-400 to-pink-500 rounded-lg flex items-center justify-center">
+              <Rocket className="w-4 h-4 text-white" />
+            </div>
+            <div>
+              <div className="text-sm font-bold text-purple-400">Innovation Hub</div>
+              <div className="text-xs text-gray-300">Tech Ventures</div>
+            </div>
+          </div>
+        </motion.div>
 
-    <motion.div
-      className="absolute right-2 top-[60%] bg-gradient-to-r from-emerald-500/20 to-teal-400/20 rounded-lg p-2 border border-emerald-400/40 backdrop-blur-sm shadow-lg w-[200px] h-[50px]"
-      initial={{ opacity: 0, x: 20 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
-      animate={{
-        y: [0, -2, 0],
-        rotateY: [0, 2, 0],
-      }}
-      transition={{
-        delay: 0.9,
-        duration: 0.8,
-        y: { duration: 10, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
-        rotateY: { duration: 12, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
-      }}
-      style={{
-        boxShadow: "0 8px 32px rgba(16, 185, 129, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1)",
-        transform: "perspective(1000px)",
-      }}
-    >
-      <div className="flex items-center space-x-2">
-        <div className="w-5 h-5 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-lg flex items-center justify-center">
-          <Gauge className="w-3 h-3 text-white" />
-        </div>
-        <div>
-          <div className="text-xs font-bold text-emerald-400">Capital Efficiency</div>
-          <div className="text-xs text-gray-300">Optimized Returns</div>
-        </div>
+        <motion.div
+          className="bg-gradient-to-r from-emerald-500/20 to-teal-400/20 rounded-lg p-3 border border-emerald-400/40 backdrop-blur-sm shadow-lg flex-1"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          animate={{
+            y: [0, -2, 0],
+            rotateY: [0, 2, 0],
+          }}
+          transition={{
+            delay: 0.9,
+            duration: 0.8,
+            y: { duration: 10, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
+            rotateY: { duration: 12, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
+          }}
+          style={{
+            boxShadow: "0 8px 32px rgba(16, 185, 129, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1)",
+            transform: "perspective(1000px)",
+          }}
+        >
+          <div className="flex items-center space-x-3">
+            <div className="w-6 h-6 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-lg flex items-center justify-center">
+              <Gauge className="w-4 h-4 text-white" />
+            </div>
+            <div>
+              <div className="text-sm font-bold text-emerald-400">Capital Efficiency</div>
+              <div className="text-xs text-gray-300">Optimized Returns</div>
+            </div>
+          </div>
+        </motion.div>
       </div>
-    </motion.div>
+    </div>
 
     {/* Animated Background Elements */}
     <div className="absolute inset-0 opacity-20 pointer-events-none">
@@ -399,18 +400,17 @@ const MobileUIGraphic = () => (
 
       {/* Multiple Platforms - Right Side */}
       <motion.div
-        className="absolute right-1 top-[15%] sm:right-2 bg-gradient-to-r from-purple-500/20 to-pink-400/20 rounded-lg p-2 sm:p-2.5 xl:p-3 xl:p-3 border border-purple-400/40 backdrop-blur-sm shadow-lg w-[230px] xl:w-[280px] h-[60px] xl:h-[70px]"
+        className="absolute right-1 top-[15%] sm:right-2 bg-gradient-to-r from-purple-500/20 to-pink-400/20 rounded-lg p-2 sm:p-2.5 xl:p-3 border border-purple-400/40 backdrop-blur-sm shadow-lg w-[230px] xl:w-[280px] h-[60px] xl:h-[70px]"
         initial={{ opacity: 0, y: -20, x: -20 }}
         whileInView={{ opacity: 1, y: 0, x: 0 }}
-        transition={{ delay: 0.1, duration: 0.8 }}
         viewport={{ once: true }}
         animate={{
-          y: [0, -1, 0],
-          rotateY: [0, 1, 0],
+          y: [0, -0.3, 0],
+          rotateY: [0, 0.2, 0],
         }}
         transition={{
-          y: { duration: 8, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
-          rotateY: { duration: 10, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
+          y: { duration: 15, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
+          rotateY: { duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
         }}
         style={{
           boxShadow: "0 8px 32px rgba(168, 85, 247, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1)",
@@ -435,18 +435,17 @@ const MobileUIGraphic = () => (
 
       {/* VR Experience - Right Side */}
       <motion.div
-        className="absolute right-1 top-[35%] sm:right-2 bg-gradient-to-r from-blue-500/20 to-purple-400/20 rounded-lg p-2 sm:p-2.5 xl:p-3 xl:p-3 border border-blue-400/40 backdrop-blur-sm shadow-lg w-[230px] xl:w-[280px] h-[60px] xl:h-[70px]"
+        className="absolute right-1 top-[35%] sm:right-2 bg-gradient-to-r from-blue-500/20 to-purple-400/20 rounded-lg p-2 sm:p-2.5 xl:p-3 border border-blue-400/40 backdrop-blur-sm shadow-lg w-[230px] xl:w-[280px] h-[60px] xl:h-[70px]"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.15, duration: 0.8 }}
         viewport={{ once: true }}
         animate={{
-          y: [0, -1, 0],
-          rotateX: [0, 0.5, 0],
+          y: [0, -0.3, 0],
+          rotateX: [0, 0.2, 0],
         }}
         transition={{
-          y: { duration: 9, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
-          rotateX: { duration: 11, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
+          y: { duration: 15, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
+          rotateX: { duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
         }}
         style={{
           boxShadow: "0 8px 32px rgba(59, 130, 246, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1)",
@@ -472,15 +471,14 @@ const MobileUIGraphic = () => (
         className="absolute right-1 top-[55%] sm:right-2 bg-gradient-to-r from-cyan-500/20 to-blue-400/20 rounded-lg p-2 sm:p-2.5 xl:p-3 border border-cyan-400/40 backdrop-blur-sm shadow-lg w-[230px] xl:w-[280px] h-[60px] xl:h-[70px]"
         initial={{ opacity: 0, y: -20, x: 20 }}
         whileInView={{ opacity: 1, y: 0, x: 0 }}
-        transition={{ delay: 0.2, duration: 0.8 }}
         viewport={{ once: true }}
         animate={{
-          y: [0, -1, 0],
-          rotateY: [0, -1, 0],
+          y: [0, -0.3, 0],
+          rotateY: [0, -0.2, 0],
         }}
         transition={{
-          y: { duration: 9, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
-          rotateY: { duration: 11, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
+          y: { duration: 15, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
+          rotateY: { duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
         }}
         style={{
           boxShadow: "0 8px 32px rgba(34, 211, 238, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1)",
@@ -505,15 +503,14 @@ const MobileUIGraphic = () => (
         className="absolute right-1 top-[75%] sm:right-2 bg-gradient-to-r from-yellow-500/20 to-orange-400/20 rounded-lg p-2 sm:p-2.5 xl:p-3 border border-yellow-400/40 backdrop-blur-sm shadow-lg w-[230px] xl:w-[280px] h-[60px] xl:h-[70px]"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3, duration: 0.8 }}
         viewport={{ once: true }}
         animate={{
-          y: [0, -1, 0],
-          rotateX: [0, 1, 0],
+          y: [0, -0.3, 0],
+          rotateX: [0, 0.2, 0],
         }}
         transition={{
-          y: { duration: 10, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 0.2 },
-          rotateX: { duration: 12, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 0.2 },
+          y: { duration: 15, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 0.2 },
+          rotateX: { duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 0.2 },
         }}
         style={{
           boxShadow: "0 8px 32px rgba(245, 158, 11, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1)",
@@ -538,15 +535,14 @@ const MobileUIGraphic = () => (
         className="absolute left-1 top-[15%] sm:left-2 bg-gradient-to-r from-green-500/20 to-emerald-400/20 rounded-lg p-2 sm:p-2.5 xl:p-3 border border-green-400/40 backdrop-blur-sm shadow-lg w-[230px] xl:w-[280px] h-[60px] xl:h-[70px]"
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.3, duration: 0.8 }}
         viewport={{ once: true }}
         animate={{
-          y: [0, -1, 0],
-          rotateZ: [0, 0.5, 0],
+          y: [0, -0.3, 0],
+          rotateZ: [0, 0.2, 0],
         }}
         transition={{
-          y: { duration: 10, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 0.5 },
-          rotateZ: { duration: 12, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 0.5 },
+          y: { duration: 15, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 0.5 },
+          rotateZ: { duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 0.5 },
         }}
         style={{
           boxShadow:
@@ -576,15 +572,14 @@ const MobileUIGraphic = () => (
         className="absolute left-1 top-[35%] sm:left-2 bg-gradient-to-r from-red-500/20 to-orange-400/20 rounded-lg p-2 sm:p-2.5 xl:p-3 border border-red-400/40 backdrop-blur-sm shadow-lg w-[230px] xl:w-[280px] h-[60px] xl:h-[70px]"
         initial={{ opacity: 0, x: 20 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.4, duration: 0.8 }}
         viewport={{ once: true }}
         animate={{
-          y: [0, -1, 0],
-          rotateZ: [0, -0.5, 0],
+          y: [0, -0.3, 0],
+          rotateZ: [0, -0.2, 0],
         }}
         transition={{
-          y: { duration: 11, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 1 },
-          rotateZ: { duration: 13, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 1 },
+          y: { duration: 15, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 1 },
+          rotateZ: { duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 1 },
         }}
         style={{
           boxShadow:
@@ -614,15 +609,14 @@ const MobileUIGraphic = () => (
         className="absolute left-1 top-[55%] sm:left-2 bg-gradient-to-r from-indigo-500/15 to-purple-400/15 rounded-lg p-2 sm:p-2.5 xl:p-3 border border-indigo-400/30 backdrop-blur-sm shadow-lg w-[230px] xl:w-[280px] h-[60px] xl:h-[70px]"
         initial={{ opacity: 0, x: 15, y: 10 }}
         whileInView={{ opacity: 1, x: 0, y: 0 }}
-        transition={{ delay: 0.5, duration: 0.8 }}
         viewport={{ once: true }}
         animate={{
-          y: [0, -1, 0],
-          rotateZ: [0, -0.3, 0],
+          y: [0, -0.3, 0],
+          rotateZ: [0, -0.2, 0],
         }}
         transition={{
-          y: { duration: 12, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 1.5 },
-          rotateZ: { duration: 14, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 1.5 },
+          y: { duration: 15, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 1.5 },
+          rotateZ: { duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 1.5 },
         }}
         style={{
           boxShadow: "0 6px 24px rgba(99, 102, 241, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.08)",
@@ -651,15 +645,14 @@ const MobileUIGraphic = () => (
         className="absolute left-1 top-[75%] sm:left-2 bg-gradient-to-r from-teal-500/15 to-cyan-400/15 rounded-lg p-2 sm:p-2.5 xl:p-3 border border-teal-400/30 backdrop-blur-sm shadow-lg w-[230px] xl:w-[280px] h-[60px] xl:h-[70px]"
         initial={{ opacity: 0, x: -15, y: 10 }}
         whileInView={{ opacity: 1, x: 0, y: 0 }}
-        transition={{ delay: 0.6, duration: 0.8 }}
         viewport={{ once: true }}
         animate={{
-          y: [0, -1, 0],
-          rotateZ: [0, 0.3, 0],
+          y: [0, -0.3, 0],
+          rotateZ: [0, 0.2, 0],
         }}
         transition={{
-          y: { duration: 13, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 2 },
-          rotateZ: { duration: 15, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 2 },
+          y: { duration: 15, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 2 },
+          rotateZ: { duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 2 },
         }}
         style={{
           boxShadow: "0 8px 32px rgba(20, 184, 166, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.08)",
@@ -693,14 +686,14 @@ const MobileUIGraphic = () => (
             top: `${Math.random() * 85 + 5}%`,
           }}
           animate={{
-            y: [0, -10, 0],
-            opacity: [0.3, 0.8, 0.3],
-            scale: [0.5, 1.2, 0.5],
+            y: [0, -8, 0],
+            opacity: [0.2, 0.7, 0.2],
+            scale: [0.3, 1, 0.3],
           }}
           transition={{
-            duration: 3 + Math.random() * 4,
+            duration: 4 + Math.random() * 3,
             repeat: Number.POSITIVE_INFINITY,
-            delay: Math.random() * 3,
+            delay: Math.random() * 2,
             ease: "easeInOut",
           }}
         />
@@ -749,12 +742,9 @@ const MobileUIGraphic = () => (
           }}
         />
       ))}
-
     </div>
   </div>
 )
-
-const DigitalSystemsUIGraphic = () => <GrowthChart />
 
 const GamesPortfolio = () => (
   <motion.div id="games" key="games-section" className="w-full">
@@ -861,18 +851,18 @@ const GamesPortfolio = () => (
               <source src="https://newfolder.imediasolutions.ru/storage/2025/05/16/a011cd9f6657cd2a97cf185580622b7eb3ca22c8.mp4" type="video/mp4" />
             </video>
             <div className="absolute bottom-4 right-4 flex space-x-2 z-20">
-              <a
-                href="https://www.meta.com/ru-ru/experiences/titans-clinic/6035422123217068/?srsltid=AfmBOoqaokzCMvwgBzkYkcuwOyru_ywstMtaEl4JkpJG-o9kYyzZq3DQ"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-black/60 hover:bg-black/80 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
-              >
-                <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mobile_15071740-7CQ6VXnFEigS7Jp7Hv4Dh8qgPez5pK.png"
-                  alt="Meta"
-                  className="w-5 h-5 filter brightness-0 invert"
-                />
-              </a>
+                             <a
+                 href="https://www.meta.com/ru-ru/experiences/titans-clinic/6035422123217068/?srsltid=AfmBOoqaokzCMvwgBzkYkcuwOyru_ywstMtaEl4JkpJG-o9kYyzZq3DQ"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="w-10 h-10 bg-black/60 hover:bg-black/80 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+               >
+                 <img
+                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mobile_15071740-7CQ6VXnFEigS7Jp7Hv4Dh8qgPez5pK.png"
+                   alt="Meta"
+                   className="w-5 h-5 filter brightness-0 invert"
+                 />
+               </a>
               <a
                 href="https://store.steampowered.com/app/2596030/Fruit_Salon/?l=russian"
                 target="_blank"
@@ -947,7 +937,6 @@ export function ServicesViewportSection() {
   const containerRef = useRef<HTMLDivElement>(null)
   const serviceRefs = useRef<(HTMLDivElement | null)[]>([])
 
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -1007,7 +996,7 @@ export function ServicesViewportSection() {
     })
   }
 
-  const DigitalSystemsUIGraphicComponent = DigitalSystemsUIGraphic
+  const DigitalSystemsUIGraphicComponent = GrowthChart
 
   const renderServiceUI = (index: number) => {
     switch (index) {
@@ -1198,6 +1187,8 @@ export function ServicesViewportSection() {
               </motion.div>
             ))}
 
+
+            {/* Games Portfolio Section - moved above Our Mission */}
             <GamesPortfolio />
 
             <motion.div
@@ -1281,6 +1272,7 @@ export function ServicesViewportSection() {
                 </motion.div>
               </div>
             </motion.div>
+
           </div>
         </div>
       </div>
